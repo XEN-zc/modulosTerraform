@@ -50,14 +50,14 @@ variable "name-private-subnet3"{
 }
 
 #-------------------------------
-	### para gateway
-variable "name-gatway"{
+	### para internet gateway
+variable "name-internet-gatway"{
 	default="my-internet-gateway"
 }
 
 #-------------------------------
 	###para elastic ip
-variable "vpc"{
+variable "eip-vpc"{
 	default="true"
 }	
 

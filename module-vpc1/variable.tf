@@ -51,7 +51,7 @@ variable "name-private-subnet3"{
 
 #-------------------------------
 	### para gateway
-variable "name-gatway"{
+variable "name-internet-gatway"{
 	default="my-internet-gateway"
 }
 

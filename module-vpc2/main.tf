@@ -74,14 +74,14 @@ resource "aws_subnet" "subnetPrivate3" {
 resource "aws_internet_gateway" "igw"{
 	  vpc_id            = "${aws_vpc.myVpc.id}"
 	  tags{
-		Name="${var.name-gatway}"
+		Name="${var.name-internet-gatway}"
 	  }
 }
 
 #----------------------------
 	###para elastic ip 
 resource "aws_eip" "eip"{
-	vpc=true
+	vpc="${var.eip-vpc}"
 	
 }
 

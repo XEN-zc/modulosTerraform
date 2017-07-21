@@ -34,7 +34,7 @@ output "eip"{
   value ="${aws_eip.eip.id}"
 }
 
-output "nat gatway"{
+output "nat-gatway"{
   value ="${aws_nat_gateway.ngw.id}"
 }
 
